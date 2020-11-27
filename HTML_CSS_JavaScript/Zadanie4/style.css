@@ -1,0 +1,58 @@
+.container{
+    margin: 150px auto auto auto;
+    background-color: rgba(0,98,255,0.3);
+    padding-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0,30,250,0.3);
+}
+#tab{
+    position: fixed;
+    display: none;
+    background-color: rgba(81, 94, 145,0.3);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.tabulka{
+    position: fixed;
+    z-index: 20;
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 5px;
+    box-shadow: 3px 3px 5px rgba(0,30,250,0.3);
+    border-radius: 15px;
+}
+table, tr ,td{
+    text-align: center;
+    border-collapse: collapse;
+    padding:5px;
+    margin: auto;
+}
+tr,td{
+    font-size: 25px;
+}
+.Alert{
+    padding-top: 3px;
+    display: none;
+    color: rgba(210,0,13,0.76);
+}
+h2,h3{
+    padding-top: 5px;
+    text-align: center;
+    color: rgba(0,23,141,0.7);
+}
+#tlac_zavr{
+    margin: 10px auto auto auto;
+    font-size: 30px;
+    border-color: rgba(0,23,141,1);
+    background-color: rgba(0,30,250,0.3);
+    color: rgba(0,23,141,0.7);
+    border-radius: 10px;
+}
+#tlac_zavr:hover{
+    color: blue;
+}

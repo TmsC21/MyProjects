@@ -1,0 +1,91 @@
+.tump{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid rgba(0,0,0,0.3);
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+.tump:hover{
+    box-shadow: none;
+    border: 3px solid rgba(0,0,0,0.5);
+}
+html,body{
+    background-image: url("images/backgroud.jpg");
+}
+h2{
+    background-color: rgba(0,0,0,0.1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0,0,0,0.3);
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+#gallery_wrapper{
+    background-color: rgba(0,0,0,0.05);
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+#Input_text{
+    max-width: 150px;
+    background-color: rgba(255,255,255,0.9);
+    border: 2px solid rgba(0,0,0,0.4);
+}
+#Input_text:hover{
+    border: 2px solid rgba(0,0,0,0.6);
+}
+.searchBarino{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#gallery_slider{
+    top:0;
+    left: 0;
+    position: fixed;
+    display: none;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+}
+#gallery_slider_block{
+    position: fixed;
+    z-index: 20;
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    background-position:center;
+    background-color: black;
+    border: 5px solid rgba(0,0,0,0.4);
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 5px 5px rgba(255,255,255,0.3);
+}
+.cklose{
+    font-size: 35px;
+}
+.close{
+    margin-right: 10px;
+}
+.close:focus{
+    outline: none;
+}
+.close:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+.pop:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+.pop{
+    cursor: pointer;
+    user-select: none;
+    font-size: 30px;
+}

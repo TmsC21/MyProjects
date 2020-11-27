@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cfd0f52-56a7-4a6b-bbf9-dbe1ba3244e5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iPWqISszOzKZrQsYznZrelogEW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tcupe\PhpstormProjects\Zadanie1\img" />
+      <recent name="C:\Users\tcupe\PhpstormProjects\Zadanie1\font" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cfd0f52-56a7-4a6b-bbf9-dbe1ba3244e5" name="Default Changelist" comment="" />
+      <created>1601809896356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601809896356</updated>
+      <workItem from="1601809897440" duration="14762000" />
+      <workItem from="1601909409729" duration="20040000" />
+      <workItem from="1601974125175" duration="2461000" />
+      <workItem from="1601989122280" duration="7159000" />
+      <workItem from="1602059481117" duration="231000" />
+      <workItem from="1602069090191" duration="549000" />
+      <workItem from="1602069883758" duration="160000" />
+      <workItem from="1602147273425" duration="718000" />
+      <workItem from="1602253168374" duration="449000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1602253539702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602253539702" />
+    <state x="637" y="201" key="#Options" timestamp="1601810434506">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="637" y="201" key="#Options/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601810434506" />
+    <state x="536" y="165" key="#SSH_Configurations" timestamp="1601810289233">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="165" key="#SSH_Configurations/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601810289233" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601923858243">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601923858243" />
+    <state x="681" y="368" width="445" height="264" key="ComposerInitDialogKey" timestamp="1601810945364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="368" key="ComposerInitDialogKey/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601810945364" />
+    <state x="2465" y="294" width="445" height="264" key="ComposerInitDialogKey/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1601809958298" />
+    <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1601909810817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="275" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601909810817" />
+    <state x="2197" y="57" key="SettingsEditor" timestamp="1601809904584">
+      <screen x="1920" y="0" width="1536" height="832" />
+    </state>
+    <state x="2197" y="57" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@1920.0.1536.832" timestamp="1601809904584" />
+    <state x="788" y="250" key="ftp.server.browser" timestamp="1601810815000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="788" y="250" key="ftp.server.browser/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601810815000" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601820329583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601820329583" />
+  </component>
+</project>

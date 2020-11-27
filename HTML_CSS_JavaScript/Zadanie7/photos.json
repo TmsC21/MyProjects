@@ -1,0 +1,41 @@
+{
+  "photos":
+  [
+    {
+      "indexx": 0,
+      "src": "obr1.jpg",
+      "title": "Teta1",
+      "description": "Dlhší popis obrázku 1"
+    },
+    {
+      "indexx": 1,
+      "src": "obr2.jpg",
+      "title": "Jazero",
+      "description": "Dlhší popis obrázku 2"
+    },
+    {
+      "indexx": 2,
+      "src": "obr3.jpg",
+      "title": "Teta2",
+      "description": "Dlhší popis obrázku 3"
+    },
+    {
+      "indexx": 3,
+      "src": "obr4.jpg",
+      "title": "Peso",
+      "description": "Dlhší popis obrázku 4"
+    },
+    {
+      "indexx": 4,
+      "src": "obr5.jpg",
+      "title": "Kappa",
+      "description": "Dlhší popis obrázku 5"
+    },
+    {
+      "indexx": 5,
+      "src": "obr6.jpg",
+      "title": "Krava",
+      "description": "Dlhší popis obrázku 6"
+    }
+  ]
+}

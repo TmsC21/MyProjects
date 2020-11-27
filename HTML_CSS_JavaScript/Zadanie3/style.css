@@ -1,0 +1,62 @@
+body{
+    background-color: #2E4172;
+    color: #061539;
+}
+form{
+    width: 500px;
+    margin: 50px auto auto auto;
+    border: 3px solid #061539;
+    background-color: #7887AB;
+    padding: 0 25px 20px 20px;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    color: #181F58;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.radioVlna{
+    top:7px;
+}
+.cvicite{
+    right:10px;
+}
+.novyContainer{
+    display: none;
+}
+.pdatum{
+    right: 10px;
+    bottom: 12px;
+}
+.textIne{
+    display: none;
+}
+.small_datum{
+    display: none;
+    color: red;
+}
+.small_email{
+    display: none;
+    color: red;
+}
+.button_small{
+    display: none;
+    color: red;
+}
+.emejl{
+    left: -10px;
+}
+.hviezda{
+    color: red;
+}
+#button{
+    background-color: #2E4172;
+    border-color:#061539;
+    color: #7887AB;
+    font-weight: bold;
+    font-size: 20px;
+}
+#button:hover{
+    color: aliceblue;
+}

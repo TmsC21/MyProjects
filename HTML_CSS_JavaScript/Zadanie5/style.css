@@ -1,0 +1,47 @@
+#map,#pano {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+html, body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    background-image: url("img/backgroud.jpg");
+    background-position-y: 400px;
+    text-align: center;
+    font-size: 20px;
+}
+html{
+    height: 95%;
+}
+.formular{
+    border: 2px solid black;
+    width: 35%;
+    margin: 15px auto 15px auto;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+#output{
+    font-size: 25px;
+    font-weight: bold;
+}
+#autom_,#chodza_{
+    font-size: 25px;
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+#Radios{
+    align-items: center;
+    justify-content: center;
+}
+#autom_{
+    margin-right: 10px;
+}
+.btn{
+    background-color: rgba(0,0,0,0.5);
+    border-color: black;
+}

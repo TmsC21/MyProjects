@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>O mne</title>
+    <style>
+        body{
+            background: aliceblue;
+            font-family: sans-serif;
+            font-size: large;
+            margin: 0;
+        }
+        header{
+            background: lightskyblue;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 6px 6px rgba(0,23,141,0.46);
+            margin-bottom: 20px;
+            height: 100px;
+        }
+        nav{
+            padding-top: 15px;
+            float: left;
+        }
+        header h1{
+            font-family: cursive;
+            text-align: center;
+            padding-top: 3px;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: blue;
+        }
+        #prva_stanka{
+            margin-left: 10px;
+            border-right: 3px solid blue;
+        }
+        #tretia_stranka{
+            border-left: 3px solid blue;
+        }
+        #prva_stanka,#druha_stranka,#tretia_stranka {
+            padding: 3px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: blue;
+        }
+        #prva_stanka:hover{
+            box-shadow: 0 1px blue;
+            background: lightblue;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        #druha_stranka:hover{
+            box-shadow: 0 1px blue;
+            background: lightblue;
+            border-radius: 3px;
+        }
+        #tretia_stranka:hover{
+            box-shadow: 0 1px blue;
+            background: lightblue;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        #prva_stanka:active,#druha_stranka:active,#tretia_stranka:active{
+            box-shadow: 0 1px blue;
+            background: rgba(0,98,255,0.58);
+        }
+        #section_main{
+            margin: 25px 100px 20px 100px;
+            background: rgba(138,206,255,0.28);
+            border-radius: 10px;
+            padding-bottom: 15px;
+            box-shadow: 6px 6px rgba(0,23,141,0.46);
+        }
+        #section_main h2{
+            font-family: cursive;
+            text-align: center;
+            color: blue;
+        }
+        #foto{
+            float: left;
+            margin-left: 5px;
+            margin-right: 20px;
+            margin-bottom: 55px;
+            border-radius: 20px;
+            box-shadow: 8px 10px rgba(0,23,141,0.46);
+        }
+        .text_main{
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        aside {
+            float: right;
+            width: 200px;
+            height: 230px;
+            border: 3px solid blue;
+            box-shadow: 8px 10px rgba(0, 23, 141, 0.46);
+            margin: 10px 30px 20px 30px;
+            padding: 15px;
+        }
+        aside h4{
+            margin-top: 3px;
+            margin-bottom: 3px;
+            font-family: cursive;
+            text-align: center;
+            color: blue;
+        }
+        aside p{
+            font-family: Dubai;
+            font-weight: bold;
+            margin-top: 25px;
+            text-align: center;
+        }
+        #section_second{
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            background: rgba(138,206,255,0.28);
+            border-radius: 10px;
+            box-shadow: 6px 6px rgba(0,23,141,0.46);
+        }
+        #section_second h3{
+            text-align: center;
+            font-family: cursive;
+            color: blue;
+        }
+        #section_second ul{
+            padding-bottom: 5px;
+        }
+        #section_second li{
+            padding-bottom: 3px;
+        }
+        #section_second li:hover{
+            color: blue;
+            background: lightblue;
+            width: 50%;
+            border-radius: 15px;
+        }
+        footer{
+            background: lightskyblue;
+            border-top: 2px solid blue;
+            border-bottom: 2px solid blue;
+            border-radius: 10px 10px 0 0;
+            padding-left: 3px;
+            margin-top: 61px;
+            margin-bottom: 0;
+        }
+        footer p{
+            font-weight: bold;
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O mne</h1>
+        <nav>
+            <a id="prva_stanka" href="index.html">O mne</a>
+            <a id="druha_stranka" href="zivotopis.html">Životopis</a>
+            <a id="tretia_stranka" href="rozvrh.html">Môj rozvrh</a>
+        </nav>
+    </header>
+
+    <section id="section_main">
+        <h2>O mne</h2>
+        <img id="foto" src="img/ja.jpg" height="300" width="300" alt="Ja"/>
+        <aside>
+            <h4>Moje motto</h4>
+            <p>„Nič som nenadobudol ľahko. Každá vec ma stála tvrdú prácu. Nehľadaj ľahké cesty. Tie hľadá toľko ľudí, že sa po nich nedá prísť nikam.“</p>
+        </aside>
+        <p class="text_main">Takže kde by som začal.Volám sa Tomáš Čupeľa, mam 22 rokov a som študentom vysokej školy ktorá sídli v Bratislave. Ide o Slovensku technickú univerzitu a ak by som mal byť konkrétny tak študujem na fakulte elektrotechniky a informatiky v skratke FEI. Som tretiakom na tejto univerzite a tato stránka je vytvorená na ako prvé zadanie jedného z tretiackych predmetov. Táto škola ma úprimne do štvrtého semestra vôbec nebavila a ak mam byť naozaj úprimný tak som si nevedel predstaviť celý život za PC. No v štvrtom semestri prišiel zlom a úplne som sa našiel v tom čo študujem. Je to síce pre mňa pomerne ťažká škola ale mam okolo seba kopec dobrých kamarátov ktorý mi pomáhajú a ťahajú ma hore.</p>
+        <p class="text_main">Keď prejdem trocha do minulosti, tak môžem spomenúť moju strednú školu v meste v ktorom som vyrastal. Ide o Strednú priemyselnú školu v Bardejove, konkrétne som študoval odbor technické lýceum presnejší odbor informatika. Táto škola mi dala malý úvod do programovania no väčšinu som sa naučil sám na vysokej škole. Moje mesto v ktorom som vyrastal je okolo 30 000 mesto na východnom Slovensku asi 50 km od Prešova. Oproti Bratislave je to malé ale o to menej hlučne mesto. Na Bratislavu som si veľmi zvykol a určite by som skôr chcel bývať v Bratislave ako v Bardejove hlavne kvôli pracovným možnostiam, no veľmi rád sa opäť vraciam do Bardejova si trocha oddýchnuť od toho rušného mesta ako je Bratislava.</p>
+        <p class="text_main">Mojím najväčším koníčkom je určite cvičenie, teda rad cvičím vo fitku. Cvičím už niečo vyše piatich rokov a veľmi ma to baví. Necvičím preto lebo musím schudnúť alebo niečo, toto je jeden z koníčkov pri ktorých viem veľmi dobre relaxovať a vyprázdniť si hlavu. Začal som cvičiť keď som mal asi 48kg čiže si asi viete predstaviť aký tenučký som bol. S rokmi cvičenia prišla aj nejaká vizuálna odozva, no po toľkých rokoch cvičenia by to bolo oveľa lepšie ak by som to bral viac ako len koníček.</p>
+
+    </section>
+
+    <section id="section_second">
+        <h3>Moje dalšie záluby</h3>
+        <ul>
+            <li>Cvičenie</li>
+            <li>Streľba zo vzduchovky</li>
+            <li>Pozeranie filmov a serialov</li>
+            <li>Čítanie kníh</li>
+            <li>Programovanie</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright: Tomáš Čupeľa 2020</p>
+    </footer>
+</body>
+</html>

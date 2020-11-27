@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="61870179-d2c8-4490-86c7-ed2430d6213d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ixrdFkSpGCv8haV2y1GHjpADQg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61870179-d2c8-4490-86c7-ed2430d6213d" name="Default Changelist" comment="" />
+      <created>1602860169593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602860169593</updated>
+      <workItem from="1602860170640" duration="9098000" />
+      <workItem from="1602919175762" duration="23006000" />
+      <workItem from="1602944734636" duration="344000" />
+      <workItem from="1603030390027" duration="6431000" />
+      <workItem from="1603106282169" duration="3978000" />
+      <workItem from="1603112968228" duration="590000" />
+      <workItem from="1603118716974" duration="113000" />
+      <workItem from="1603123276542" duration="665000" />
+      <workItem from="1603124646516" duration="109000" />
+      <workItem from="1603197618982" duration="1210000" />
+      <workItem from="1603199510432" duration="651000" />
+      <workItem from="1603284896344" duration="442000" />
+      <workItem from="1603287064397" duration="248000" />
+      <workItem from="1603368585857" duration="6000" />
+      <workItem from="1603465611498" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1603113196400">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1603113196400" />
+    <state x="637" y="201" key="#Options" timestamp="1602860378444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="637" y="201" key="#Options/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602860378444" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602860534753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602860534753" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1602860508914">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602860508914" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602860504457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602860504457" />
+    <state x="845" y="250" key="ftp.server.browser" timestamp="1602860447059">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="250" key="ftp.server.browser/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602860447059" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602926873608">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602926873608" />
+  </component>
+</project>

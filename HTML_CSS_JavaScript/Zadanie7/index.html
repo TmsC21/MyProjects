@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TC</title>
+    <script src="DzavaScript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <h2>My gallery</h2>
+        <div class="input-group searchBarino">
+            <div class="input-group-prepend">
+                <div class="input-group-text "><span class="fa fa-search"></span></div>
+            </div>
+            <input type="text" class="form-control" id="Input_text" placeholder="Filter..">
+        </div>
+    <div id="gallery_wrapper"></div>
+    <div id="gallery_slider">
+        <div id="gallery_slider_block">
+            <button type="button" class="close" aria-label="Close" onclick=closeSlider()>
+                <span class="cklose" aria-hidden="true" >&times;</span>
+            </button>
+            <a id="prev" class="prev pop">&#10094;</a>
+            <a id="next" class="next pop">&#10095;</a>
+            <a id="play" class="play pop">&#9658;</a>
+            <a id="stop" class="stop pop">&#8718;</a>
+        </div>
+    </div>
+</body>
+</html>
