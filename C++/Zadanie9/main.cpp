@@ -1,5 +1,5 @@
 /*
-Meno a priezvisko:
+Meno a priezvisko: Tomas Cupela
 
 POKYNY:
 (1)  Subor premenujte na Priezvisko_Meno_ID_zadanie09.cpp (pouzite vase udaje bez diakritiky).
@@ -79,8 +79,16 @@ class ValueNotExistsException : public std::exception {
 */
 
 int min(const BinarySearchTree *tree) {
-    // TODO
-    return -1; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+	Node *tmp = tree->root;
+	int minimum;
+	if(tmp == nullptr){
+		throw ValueNotExistsException();
+	}
+	while(tmp != nullptr){
+		minimum = tmp->value;
+		tmp = tmp->smaller;
+	}
+    return minimum;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -102,9 +110,31 @@ int min(const BinarySearchTree *tree) {
         ValueNotExistsException - ak sa uzol s hodnotou 'value' v strome nenachdza
 */
 
+size_t search_hlbka(Node *root, int key, size_t hlbka,bool &yes) 
+{ 
+	
+    if (root == NULL || root->value == key){
+		yes= true;
+		if(root == NULL){
+			yes = false;
+		}
+		return hlbka; 
+	}
+    if (root->value < key){
+		hlbka++;
+		return search_hlbka(root->greater, key,hlbka,yes); 
+	} 
+	hlbka++;
+    return search_hlbka(root->smaller, key,hlbka,yes); 
+}
 unsigned depth(const BinarySearchTree *tree, int value) {
-    // TODO
-    return 0; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+    size_t hlbka = 0;
+	bool yes = false;
+	hlbka = search_hlbka(tree->root,value,hlbka,yes);
+	if(yes == false){
+		throw ValueNotExistsException();
+	}
+    return hlbka; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -138,10 +168,49 @@ unsigned depth(const BinarySearchTree *tree, int value) {
             value: 45
             vystup: (40, 50)
 */
+list<int> search_list(Node *root, int key, list<int> list) 
+{ 
+	if(root == nullptr){
+		return list; 
+	}
+    if ( root->value == key){
+		list.push_back(root->value);
+		return list; 
+	}
+    if (root->value < key){
+		list.push_back(root->value);
+		if(root->greater!=nullptr){
+			if(key < root->greater->value){
+				list.push_back(root->greater->value);
+				return list;
+			}
+		}
+		else{
+			return list;
+		}
+		if(root->greater!=nullptr){
+			list = search_list(root->greater, key,list);
+		}
+	}
+	list.push_back(root->value); 
+	if(root->smaller!=nullptr){
+		list = search_list(root->smaller, key,list); 
+	}
+	return list;
+}
 
+
+void print_list(list<int> list){
+	for(auto i : list){
+		cout << i << " ";
+	}
+	cout << endl;
+}
 list<int> path(const BinarySearchTree *tree, int value) noexcept {
-    // TODO
-    return list<int>(); // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+    list<int> list;
+	list = search_list(tree->root,value,list);
+	print_list(list);
+    return list; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -156,10 +225,29 @@ list<int> path(const BinarySearchTree *tree, int value) noexcept {
     NAVRATOVA HODNOTA:
         pocet uzlov stromu
 */
-
+size_t search_size(Node *root, size_t sajz) 
+{ 
+    if (root == nullptr){
+		return sajz; 
+	}
+    if (root->greater != nullptr){
+		sajz++;
+		sajz = search_size(root->greater,sajz); 
+	} 
+	if(root->smaller != nullptr){
+		sajz++;
+		sajz = search_size(root->smaller,sajz);
+	}
+	 return sajz;
+}
 size_t count(const BinarySearchTree *tree) noexcept {
-    // TODO
-    return 0; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+	size_t sajz = 0;
+	if(tree->root == nullptr){
+		return sajz;
+	}
+	sajz++;
+    sajz = search_size(tree->root,sajz);
+    return sajz; 
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -177,10 +265,20 @@ size_t count(const BinarySearchTree *tree) noexcept {
     NAVRATOVA HODNOTA:
         hodnoty uzlov, v poradi od najmensej po najvacsiu
 */
-
+void inOrderAll(Node* root,list<int> &list) 
+{ 
+	if (root == nullptr) return; 
+    if (root != NULL) 
+    { 
+        inOrderAll(root->smaller,list); 
+        list.push_back(root->value);
+        inOrderAll(root->greater,list); 
+    } 
+} 
 list<int> all(const BinarySearchTree *tree) noexcept {
-    // TODO
-    return list<int>(); // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+    list<int> list;
+	inOrderAll(tree->root,list);
+    return list; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -196,10 +294,32 @@ list<int> all(const BinarySearchTree *tree) noexcept {
     NAVRATOVA HODNOTA:
         pocet uzlov s hodnotou vacsou ako 'value'
 */
-
+size_t search_greater(Node *root, int key, size_t pocet) 
+{ 
+    if (root->greater != nullptr){
+		if(root->value > key){
+			pocet++;
+		}
+		pocet = search_greater(root->greater,key,pocet); 
+	} 
+	if(root->smaller != nullptr){
+		if(root->value > key){
+			pocet++;
+		}
+		pocet = search_greater(root->smaller,key,pocet);
+	}
+	return pocet;
+}
 size_t countGreater(const BinarySearchTree *tree, int value) noexcept {
-    // TODO
-    return 0; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+    size_t pocet = 0;
+	if(tree->root == nullptr){
+		return pocet;
+	}
+	if(tree->root->value > value){
+		pocet++;
+	}
+	pocet = search_greater(tree->root,value,pocet);
+    return pocet; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -217,9 +337,17 @@ size_t countGreater(const BinarySearchTree *tree, int value) noexcept {
         vsetky uzly su dealokovane
         'tree->root' je nulovy smernik
 */
+void deleteTree(Node* node)  
+{  
+    if (node == NULL) return;  
 
+    deleteTree(node->smaller);  
+    deleteTree(node->greater);   
+    delete node; 
+}  
 void clear(BinarySearchTree *tree) noexcept {
-    // TODO
+    deleteTree(tree->root);
+	tree->root = nullptr;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -290,8 +418,28 @@ unsigned contains(const vector<int> & data, int value) noexcept {
 */
 
 map<string, size_t> histogram(const vector<string> & data) noexcept {
-    // TODO
-    return map<string, size_t>(); // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+	map<string, size_t> mymap;
+	if(data.empty()){
+		return mymap;
+	}
+	for(auto i: data){
+		mymap[i] = 0;
+	}
+	map<string, size_t>::key_compare mycomp = mymap.key_comp();
+	string highest = mymap.rbegin()->first;     
+	map<string, size_t>::iterator it = mymap.begin();
+	for(auto i: data){
+		do {
+			if(i == it->first){
+				it->second++;
+			}
+	  } while ( mycomp((*it++).first, highest) );
+	  it = mymap.begin();
+	}
+	do {
+    cout << it->first << " => " << it->second << '\n';
+	} while ( mycomp((*it++).first, highest) );
+    return mymap; 
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -326,8 +474,16 @@ map<string, size_t> histogram(const vector<string> & data) noexcept {
 */
 
 map<string, set<size_t>> index(const vector<string> & data) noexcept {
-    // TODO
-    return map<string, set<size_t>>(); // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+	map<string, set<size_t>> mymap;
+	if(data.empty()){
+		return mymap;
+	}
+	size_t k=0;
+	for(auto i: data){
+		mymap[i].insert(k);
+		k++;
+	}
+    return mymap; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -335,10 +491,58 @@ map<string, set<size_t>> index(const vector<string> & data) noexcept {
 //-------------------------------------------------------------------------------------------------
 
 // tu mozete doplnit pomocne funkcie a struktury
-
+void inOrder(Node* root) 
+{ 
+	
+    if (root != NULL) 
+    { 
+        inOrder(root->smaller); 
+        cout << root->value <<". "; 
+        inOrder(root->greater); 
+    } 
+} 
+Node* newNode(int value ) 
+{ 
+    Node* node = (Node*)malloc(sizeof(Node)); 
+    node->value  = value; 
+    node->smaller = node->greater = NULL; 
+    return (node); 
+} 
+Node* insertLevelOrder(int arr[], Node* root, 
+                       int i, int n) 
+{ 
+    // Base case for recursion 
+    if (i < n) 
+    { 
+        Node* temp = newNode(arr[i]); 
+        root = temp; 
+  
+        // insert left child 
+        root->smaller = insertLevelOrder(arr, 
+                   root->smaller, 2 * i + 1, n); 
+  
+        // insert right child 
+        root->greater = insertLevelOrder(arr, 
+                  root->greater, 2 * i + 2, n); 
+    } 
+    return root; 
+} 
 int main() {
-
-    // tu mozete doplnit testovaci kod
-
+	
+	
+	int arr[] = {40,20,50,10,30,40,60,5}; 
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    Node* root = insertLevelOrder(arr, root, 0, n);
+	BinarySearchTree *bs = new BinarySearchTree;
+	bs->root = root;
+	path(bs,15);
+	//cout << count(bs) << endl;
+	//all(bs);
+	cout << countGreater(bs,40)<< endl;
+	//clear(bs);
+	vector<string> data = {"pocitac", "lietadlo", "luk", "pocitac", "pocitac", "okno", "luk"};
+	//histogram(data);
+	index(data);
     return 0;
 }
+
