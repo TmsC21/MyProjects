@@ -168,49 +168,43 @@ unsigned depth(const BinarySearchTree *tree, int value) {
             value: 45
             vystup: (40, 50)
 */
-list<int> search_list(Node *root, int key, list<int> list) 
-{ 
-	if(root == nullptr){
-		return list; 
-	}
-    if ( root->value == key){
-		list.push_back(root->value);
-		return list; 
-	}
-    if (root->value < key){
-		list.push_back(root->value);
-		if(root->greater!=nullptr){
-			if(key < root->greater->value){
-				list.push_back(root->greater->value);
-				return list;
-			}
-		}
-		else{
-			return list;
-		}
-		if(root->greater!=nullptr){
-			list = search_list(root->greater, key,list);
-		}
-	}
-	list.push_back(root->value); 
-	if(root->smaller!=nullptr){
-		list = search_list(root->smaller, key,list); 
-	}
-	return list;
-}
-
-
 void print_list(list<int> list){
 	for(auto i : list){
 		cout << i << " ";
 	}
 	cout << endl;
 }
+void search_list(Node *root, int key, list<int> &list) 
+{ 
+	if(root == nullptr){
+		return; 
+	}
+    if ( root->value == key){
+		list.push_back(root->value);
+		return; 
+	}
+	
+    if (root->value < key){
+		if(root->greater!=nullptr){
+			search_list(root->greater, key,list);
+		}
+		list.push_back(root->value);
+		return;
+	}
+		
+	if(root->smaller!=nullptr){
+		search_list(root->smaller, key,list); 
+	}
+	list.push_back(root->value);
+	return;
+}
+
 list<int> path(const BinarySearchTree *tree, int value) noexcept {
     list<int> list;
-	list = search_list(tree->root,value,list);
+	search_list(tree->root,value,list);
+	list.reverse();
 	print_list(list);
-    return list; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+    return list; 
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -294,32 +288,31 @@ list<int> all(const BinarySearchTree *tree) noexcept {
     NAVRATOVA HODNOTA:
         pocet uzlov s hodnotou vacsou ako 'value'
 */
-size_t search_greater(Node *root, int key, size_t pocet) 
+void search_greater(Node *root, int key, size_t &pocet) 
 { 
+	if(root == nullptr){
+		return;
+	}
+	if(root->value > key){
+		cout << root->value << " ";
+		pocet++;
+	}
     if (root->greater != nullptr){
-		if(root->value > key){
-			pocet++;
-		}
-		pocet = search_greater(root->greater,key,pocet); 
+		search_greater(root->greater,key,pocet); 
 	} 
 	if(root->smaller != nullptr){
-		if(root->value > key){
-			pocet++;
-		}
-		pocet = search_greater(root->smaller,key,pocet);
+		search_greater(root->smaller,key,pocet);
 	}
-	return pocet;
+	return;
 }
 size_t countGreater(const BinarySearchTree *tree, int value) noexcept {
     size_t pocet = 0;
 	if(tree->root == nullptr){
 		return pocet;
 	}
-	if(tree->root->value > value){
-		pocet++;
-	}
-	pocet = search_greater(tree->root,value,pocet);
-    return pocet; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+	search_greater(tree->root,value,pocet);
+	cout << endl;
+    return pocet; 
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -380,10 +373,26 @@ void clear(BinarySearchTree *tree) noexcept {
         data = (200), value = 200 -> vystup: 1
         data = (), value = 100 -> vystup: 0
 */
-
+int binarySearch(const vector<int> arr, int l, int r, int x,size_t &pocet) 
+{ 
+    if (r >= l) { 
+        int mid = l + (r - l) / 2; 
+		pocet++;
+        if (arr[mid] == x) {
+			return mid; 
+		}
+        if (arr[mid] > x) {
+			return binarySearch(arr, l, mid - 1, x,pocet);
+		}
+        return binarySearch(arr, mid + 1, r, x,pocet); 
+    } 
+  
+    return -1; 
+} 
 unsigned contains(const vector<int> & data, int value) noexcept {
-    // TODO
-    return 0; // tento riadok zmente podla zadania, je tu len kvoli kompilacii
+	size_t pocet = 0;
+    int result = binarySearch(data, 0, data.size()-1,value,pocet);
+    return pocet;
 }
 
 //-------------------------------------------------------------------------------------------------
@@ -530,19 +539,21 @@ Node* insertLevelOrder(int arr[], Node* root,
 int main() {
 	
 	
-	int arr[] = {40,20,50,10,30,40,60,5}; 
+	int arr[] = {40,20,50,10,30,45,60,5,11}; 
     int n = sizeof(arr)/sizeof(arr[0]); 
     Node* root = insertLevelOrder(arr, root, 0, n);
 	BinarySearchTree *bs = new BinarySearchTree;
 	bs->root = root;
-	path(bs,15);
+	//path(bs,4);
 	//cout << count(bs) << endl;
 	//all(bs);
-	cout << countGreater(bs,40)<< endl;
+	//cout << countGreater(bs,4)<< endl;
 	//clear(bs);
-	vector<string> data = {"pocitac", "lietadlo", "luk", "pocitac", "pocitac", "okno", "luk"};
+	//vector<string> data = {"pocitac", "lietadlo", "luk", "pocitac", "pocitac", "okno", "luk"};
 	//histogram(data);
-	index(data);
+	//index(data);
+	const vector<int> data ={107};
+	cout << contains(data,107) << endl;
     return 0;
 }
 
