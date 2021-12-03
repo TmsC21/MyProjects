@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PayloadFactory:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PayloadFactory_jar</output-path>
+    <root id="archive" name="PayloadFactory.jar">
+      <element id="module-output" name="PayloadFactory" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

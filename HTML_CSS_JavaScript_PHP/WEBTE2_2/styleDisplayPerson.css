@@ -1,0 +1,36 @@
+html{
+    font-size: 30px;
+}
+table{
+    font-size: 30px;
+}
+img{
+    float: left;
+    margin: 10px;
+    border-radius: 310px;
+    border: 1px solid rgba(53,53,53,0.2);
+}
+.con{
+    margin: 2% auto 0 auto;
+    width: 65%;
+}
+.info{
+    background-color: rgba(53,53,53,0.1);
+    padding-bottom: 5%;
+    border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.table{
+    background-color: rgba(53,53,53,0.05);
+    padding: 0 5% 5% 5%;
+    border: 1px solid grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h3{
+    text-align: center;
+}
+body{
+    padding-bottom: 5%;
+}

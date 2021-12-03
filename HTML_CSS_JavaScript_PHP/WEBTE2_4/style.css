@@ -1,0 +1,27 @@
+.cont{
+    width: 50%;
+    height: 100%;
+    padding-top: 3%;
+    margin: auto;
+}
+#main-table{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+#buttons{
+    position: sticky;
+    top: 2%;
+    margin-right: 1px;
+    float: left;
+}
+.td:hover{
+    background-color: rgba(53,53,53,0.2);
+}
+td,th,tr{
+    text-align: center;
+}
+#cont-graph{
+    top: 0;
+    position: sticky;
+}

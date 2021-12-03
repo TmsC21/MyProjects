@@ -1,0 +1,19 @@
+#cont{
+    margin: 2% auto 0 auto;
+    width: 60%;
+    font-size: 30px;
+    background-color: rgba(53,53,53,0.1);
+    padding-bottom: 5px;
+    border: 1px solid grey;
+    border-radius: 10px ;
+}
+form{
+    padding-left: 20%;
+}
+i{
+    color: red;
+}
+h1{
+    text-align: center;
+    background-color: rgba(53,53,53,0.2);
+}

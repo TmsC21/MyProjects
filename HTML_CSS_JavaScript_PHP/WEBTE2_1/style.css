@@ -1,0 +1,39 @@
+body{
+    font-weight: bold;
+}
+.container{
+    background-color: rgba(53,53,53,0.05);
+}
+.filter button ,.filterCis button,.filterCisDat button{
+    background-color: rgba(53,53,53,0.5);
+    color: rgba(53,53,53,1);
+    border-color: black;
+    padding: 1px 2px 1px 2px;
+}
+.btn{
+    border-color: black;
+}
+.thead{
+    background-color: rgba(53,53,53,0.15);
+    height: 55px;
+}
+#first{
+    margin-top: 20px;
+}
+#input-text{
+    width: 80px;
+}
+#table{
+    background-color: white;
+}
+#posli{
+    width: 100px;
+}
+.direc{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.direc i {
+    color: black;
+}

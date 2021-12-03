@@ -1,0 +1,26 @@
+#radioBoxList{
+    border:2px solid #ccc;
+    width:150px;
+    height: 70px;
+    overflow-y: scroll;
+}
+#buttons{
+    margin-left: 5px;
+}
+#con{
+    margin: 15px auto;
+    width: 25%;
+    border: 2px solid gray;
+}
+#con2{
+    margin: 10px auto;
+    width: 60%;
+}
+#refresh{
+    float: right;
+    font-size: 15px;
+}
+.container{
+    padding: 0 5px;
+}
+
